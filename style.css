@@ -1,3 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background: #F5FFFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #EAF4FF;
+}
+
+header {
+    background: #62C0DE;
+}
+
+footer {
+    background: #62C0DE;
+    
+}
+
+.redes-image {
+    max-width: 2rem;
+    width: 1px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.redes-image > figure > img {
+    max-width: 40px;
 }
