@@ -66,14 +66,37 @@ main{
     left: 0;
     background: var(--footer-color);
     height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
 }
 
-.redes-image {
+.footer-social{
     display: flex;
     flex-direction: row;
-
+    justify-content: space-between;
+    width: 10em;
 }
 
-.icon {
-    fill: red;
+.icon{
+    fill: var(--footer-icons);
+}
+
+.icon:hover{
+    fill: var(--footer-icons-hover);
+}
+
+.footer-text{
+    font-family: Inter;
+    color: var(--footer-icons);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#stay{
+    font-family: Inter;
+    color: var(--footer-icons);
+    font-weight: bolder;
+    font-size: 20px;
 }
