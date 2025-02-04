@@ -7,17 +7,17 @@
 body {
     display: flex;
     flex-direction: column;
-    background: #EAF4FF;
+    background: #eef5fd;
 }
 
 header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: #0A80A7;
+    background: var(--footer-color);
     justify-content: space-between;
     height: 3em;
-    border: 10px solid #0A80A7;
+    border: 10px solid var(--footer-color);
     border-radius: 0px 0px 15px 15px;
 }
 
@@ -30,40 +30,23 @@ header {
 #name{
     padding-left: 2em;
     font-family: Inter;
-    color: #EAF4FF;
+    color: var(--footer-icons);
     font-size: medium;
     font-weight: bold;
 }
 
 .nav-button{
-    color: #EAF4FF;
+    color: var(--footer-icons);
     padding-inline: 2em;
 }
 
 .link{
     font-family: inter;
-    color: #EAF4FF;
+    color: var(--footer-icons);
     text-decoration: none;
 }
 
-main{
-    min-height: 30em;
-}
-
-#content{
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    padding: 20px 68px;
-    max-width: 50em;
-
-}
-
 #footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
     background: var(--footer-color);
     height: 64px;
     display: flex;

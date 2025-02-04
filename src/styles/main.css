@@ -1,0 +1,45 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    /* padding: 20px 0px 0px 68px; */
+    max-width: 50em;
+
+}
+
+#about-me {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 68px;
+}
+
+#about {
+    color: #4E9AED;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    font-size: 2em;  
+}
+
+#me {
+    color: #005F7E;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.about-me_text {
+    color: var(--text-color);
+    font-family: Inter;
+    font-weight: bold;
+    line-height: 1.4;
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+#about-me_img {
+    /*padding: 20px 68px 0px 0px;*/
+}
+
+#projects {
+    min-height: 400px;
+}
