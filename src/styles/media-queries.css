@@ -1,5 +1,10 @@
-@media screen and (min-width: 768px) {
-  #about-me {
-    display: none;
-  }
+@media screen and (max-width: 767px) {
+
+    header {
+        width: 100%;
+    }
+
+    #about-me {
+        display: none;
+    }
 }
