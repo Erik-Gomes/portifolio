@@ -3,4 +3,6 @@
 @import "main.css";
 @import "navBar-footer.css";
 
-@import "media-queries.css";
+.hidden {
+    display: none;
+}
