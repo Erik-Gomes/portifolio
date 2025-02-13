@@ -13,6 +13,22 @@
         display: none;
     }
 
+    #about-me {
+        padding: 20px, 32px;
+    }
+
+    #dots {
+        display: block;
+    }
+
+    #read-more {
+        display: block;
+    }
+
+    #full-text {
+        display: none;
+    }
+
     .content {
         width: 100%;
     }
@@ -28,7 +44,7 @@
     #nav-bar {
         position: absolute;
         flex-direction: column;
-        top: 83%;
+        top: 75%;
         left: 0;
         width: 100%;
         height: 0;
@@ -59,5 +75,13 @@
     #check:checked~#nav-bar a {
         transform: translateY(0);
         transition-delay: calc(.15s * var(--i));
+    }
+
+    .footer-text, .footer-detail{
+        display: none;
+    }
+
+    #footer{
+        justify-content: center;
     }
 }

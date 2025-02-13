@@ -9,6 +9,7 @@ body {
     flex-direction: column;
     background: #eef5fd;
     width: 100%;
+    cursor: default;
 }
 
 header {
