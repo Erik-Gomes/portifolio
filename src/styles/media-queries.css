@@ -9,6 +9,14 @@
         display: inline-flex;
     }
 
+    #about-me_img {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+    }
+
     #check:checked~.header-icons #menu-icon{
         display: none;
     }
