@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portifólio</title>
         <link rel="shortcut icon" href="/portifolio/src/assets/favicon.png" type="image/x-icon">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
         <link rel="stylesheet" href="/portifolio/src/styles/styles.css">
         <link rel="stylesheet" href="/portifolio/src/styles/media-queries.css">
@@ -12,12 +13,16 @@
     </head>
     <body>
         <header id= "header">
-            <button id="show-nav-bar" onclick="toggleNavBar()" class="hidden">☰</button>
             <h2 id="name">Erik Gomes</h2>
+            <input type="checkbox" id="check">
+            <label for="check" class="header-icons">
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <i class='bx bx-x' id="close-icon"></i>
+            </label>
             <div id="nav-bar">
-                <ul class="nav-button"><a class="link" href="">About Me</a></ul>
-                <ul class="nav-button"><a class="link" href="">Projects</a></ul>
-                <ul class="nav-button"><a class="link" href="">Social</a></ul>
+                <ul class="nav-button"><a class="link" href="" style="--i:0;">About Me</a></ul>
+                <ul class="nav-button"><a class="link" href="" style="--i:1;">Projects</a></ul>
+                <ul class="nav-button"><a class="link" href="" style="--i:2;">Social</a></ul>
             </div>
         </header>
         <main>

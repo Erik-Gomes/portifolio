@@ -1,14 +1,55 @@
-@media screen and (max-width: 767px) {
+@media (max-width: 992px) {
+    .header {
+        padding: 1.3rem 5%;
+    }
+}
 
-    header {
-        width: 50px;
+@media screen and (max-width: 767px) {
+    .header-icons {
+        display: inline-flex;
     }
 
-    header #name, #nav-bar {
+    #check:checked~.header-icons #menu-icon{
         display: none;
     }
 
-    #show-nav-bar {
+    #check:checked~.header-icons #close-icon{
         display: block;
+    }
+
+    #nav-bar {
+        position: absolute;
+        flex-direction: column;
+        top: 83%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: var(--footer-color);
+        overflow: hidden;
+        transition: .3s ease;
+        border-radius: 0px 0px 15px 15px;
+        
+    }
+
+    #close-icon {
+        display: none;
+    }
+
+    #nav-bar a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.1rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        transition: .3s ease;
+    }
+
+    #check:checked~#nav-bar {
+        height: 12rem;
+    }
+
+    #check:checked~#nav-bar a {
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(--i));
     }
 }
