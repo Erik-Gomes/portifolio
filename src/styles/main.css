@@ -133,19 +133,3 @@ main {
 .right {
     margin-left: 10px;
 }
-
-/* game */
-
-#game {
-    height: fit-content;
-}
-
-#game-text {
-    color: var(--text-color);
-    font-family: Inter;
-    font-weight: bold;
-    line-height: 1.4;
-    font-size: 18px;
-    margin-top: 16px;
-    line-height: .8;
-}
