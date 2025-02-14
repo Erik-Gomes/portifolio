@@ -32,9 +32,9 @@ function handleCellClick(event) {
     // Exibe a imagem correspondente ao jogador atual
     const icon = cell.querySelector('.icon');
     if (currentPlayer === 'X') {
-        icon.src = '/src/assets/X.png'; // Caminho da imagem para "X"
+        icon.src = '/portifolio/src/assets/X.png'; // Caminho da imagem para "X"
     } else {
-        icon.src = '/src/assets/O.png'; // Caminho da imagem para "O"
+        icon.src = '/portifolio/src/assets/O.png'; // Caminho da imagem para "O"
     }
     icon.style.display = 'block'; // Torna a imagem visível
 
