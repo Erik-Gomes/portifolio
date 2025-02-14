@@ -54,7 +54,7 @@ main {
 /* Certification */
 
 #certification-h1 {
-    color: #005F7E;
+    color: var(--footer-icons);
     font-family: poppins, sans-serif;
     font-weight: bold;
     font-size: 2em;
@@ -63,11 +63,11 @@ main {
 
 #certifications {
     min-height: 400px;
-    padding-top: 1.2em;
+    padding-top: 1.4em;
 }
 
 #certifications-content {
-    background-color: #4E9AED;
+    background-color: var(--footer-color);
     border-radius: 16px;
     margin: 0 1em;
 }
@@ -114,5 +114,5 @@ main {
 /* contact */
 
 #contact {
-    height: 300px;
+    height: fit-content;
 }

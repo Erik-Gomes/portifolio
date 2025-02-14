@@ -85,3 +85,36 @@
         justify-content: center;
     }
 }
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Coloca os elementos em coluna */
+        align-items: center; /* Centraliza os elementos */
+        padding: 10px; /* Reduz o padding */
+    }
+
+    .game-info {
+        align-items: center; /* Centraliza o conteúdo */
+        margin-bottom: 20px; /* Adiciona espaço abaixo do game-info */
+    }
+
+    .board {
+        grid-template-columns: repeat(3, 80px); /* Reduz o tamanho das células */
+        grid-template-rows: repeat(3, 80px);
+    }
+
+    .cell {
+        width: 80px; /* Reduz o tamanho das células */
+        height: 80px;
+        font-size: 28px; /* Reduz o tamanho da fonte */
+    }
+
+    #reset {
+        width: 100%; /* Faz o botão ocupar toda a largura */
+        margin-top: 10px; /* Adiciona espaço acima do botão */
+    }
+
+    .scoreboard {
+        font-size: 20px; /* Reduz o tamanho da fonte do placar */
+    }
+}
