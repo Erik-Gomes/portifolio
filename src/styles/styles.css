@@ -2,7 +2,4 @@
 @import "vars.css";
 @import "main.css";
 @import "navBar-footer.css";
-
-.hidden {
-    display: none;
-}
+@import "animations.css";

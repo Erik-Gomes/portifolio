@@ -27,3 +27,6 @@ bottom: 0%;
 
 background: #62C0DE;
 border-radius: 0px 0px 16px 16px;
+
+
+In honor of the first code I developed, I leave here a copy of the tic-tac-toe game

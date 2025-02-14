@@ -50,6 +50,10 @@ header {
     color: var(--footer-icons-hover);
 }
 
+#nav-bar a.active { 
+    color: var(--footer-icons-hover);
+}
+
 #name{
     padding-left: 2em;
     font-family: Inter;
