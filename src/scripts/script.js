@@ -43,3 +43,11 @@ window.addEventListener("scroll", highlightNav);
 function toggleExpand(card) {
   card.classList.toggle("expanded");
 }
+
+function scrollCards(direction) {
+  const container = document.getElementById('certifications-scroll');
+  container.scrollBy({
+      left: direction * 200, // Ajuste o valor conforme necessário
+      behavior: 'smooth'
+  });
+}

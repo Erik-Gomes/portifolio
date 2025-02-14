@@ -63,6 +63,7 @@ function endGame(isDraw) {
     gameActive = false;
     if (isDraw) {
         alert('Empate!');
+        resetGame();
     } else {
         if (currentPlayer === 'X') {
             scores.player1++;

@@ -75,86 +75,13 @@ main {
 #certifications-scroll {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 90%;
-    padding-bottom: 1em;
-}
-
-.card {
-    width: 200px;
-    height: 120px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.4s ease;
-}
-
-.card.expanded {
-    width: 400px;
-    height: 300px;
-}
-
-.card.expanded img {
-    transform: scale(1.1);
-}
-/* cartification v2 */
-#certification-h1 {
-    color: var(--footer-icons);
-    font-family: poppins, sans-serif;
-    font-weight: bold;
-    font-size: 2em;
-    padding: 1em 1em;
-}
-
-#certifications {
-    min-height: 400px;
-    padding-top: 1.4em;
-}
-
-#certifications-content {
-    background-color: var(--footer-color);
-    border-radius: 16px;
-    margin: 0 1em;
-}
-
-#certifications-scroll {
-    display: flex;
-    gap: 20px;
     overflow-x: auto; /* Habilita o scroll horizontal */
     padding: 1em 1em; /* Adiciona padding para espaçamento */
     scrollbar-width: thin; /* Estilo da barra de scroll (para navegadores modernos) */
     scrollbar-color: var(--footer-icons) var(--footer-color); /* Cor da barra de scroll */
 }
 
-/* Estilo da barra de scroll para navegadores WebKit (Chrome, Safari) */
-#certifications-scroll::-webkit-scrollbar {
-    height: 8px;
-}
-
-#certifications-scroll::-webkit-scrollbar-thumb {
-    background-color: var(--footer-icons);
-    border-radius: 4px;
-}
-
-#certifications-scroll::-webkit-scrollbar-track {
-    background-color: var(--footer-color);
-}
-
 .card {
-    flex: 0 0 auto; /* Impede que os cards se redimensionem */
     width: 200px;
     height: 120px;
     background-color: white;
@@ -184,8 +111,41 @@ main {
     transform: scale(1.1);
 }
 
-/* contact */
+.scroll-button {
+    background-color: var(--footer-icons);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5em;
+    transition: background-color 0.3s;
+}
 
-#contact {
+.scroll-button:hover {
+    background-color: var(--footer-icons-hover);
+}
+
+.left {
+    margin-right: 10px;
+}
+
+.right {
+    margin-left: 10px;
+}
+
+/* game */
+
+#game {
     height: fit-content;
+}
+
+#game-text {
+    color: var(--text-color);
+    font-family: Inter;
+    font-weight: bold;
+    line-height: 1.4;
+    font-size: 18px;
+    margin-top: 16px;
+    line-height: .8;
 }
