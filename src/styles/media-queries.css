@@ -118,3 +118,25 @@
         font-size: 20px; /* Reduz o tamanho da fonte do placar */
     }
 }
+
+@media (max-width: 600px) {
+    #certifications-scroll {
+        gap: 10px; /* Reduz o espaçamento entre os cards */
+        padding: 1em 0.5em; /* Reduz o padding */
+    }
+
+    .card {
+        width: 150px; /* Reduz o tamanho dos cards */
+        height: 90px;
+    }
+
+    .card.expanded {
+        width: 300px; /* Reduz o tamanho do card expandido */
+        height: 200px;
+    }
+
+    #certification-h1 {
+        font-size: 1.5em; /* Reduz o tamanho da fonte do título */
+        padding: 0.5em 0.5em; /* Reduz o padding do título */
+    }
+}
