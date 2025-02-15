@@ -13,13 +13,9 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 1em 1em;
+    margin: 3em 1em;
 
 }
-
-/* h1 {
-    margin-bottom: 20px;
-} */
 
 .player-input {
     margin-bottom: 20px;

@@ -15,7 +15,7 @@ function readMore() {
 }
 
 function incressPadding() {
-  var padding = document.querySelectorAll(".link");
+  var padding = document.getElementById("about-me");
   padding.style.paddingTop = "3.3em";
 }
 

@@ -10,10 +10,12 @@
     }
 
     #about-me_img img {
-        display: none;
+        height: 250px;
     }
 
     #about-me {
+        display: flex;
+        flex-direction: column;
         padding: 20px, 32px;
     }
 
@@ -127,8 +129,32 @@
     }
 
     .card {
-        width: 150px; /* Reduz o tamanho dos cards */
-        height: 90px;
+        width: 300px; /* Reduz o tamanho dos cards */
+        height: 200px;
+        margin: 0 0.5em; /* Reduz a margem */
+    }
+
+    .card.expanded {
+        width: 300px; /* Reduz o tamanho do card expandido */
+        height: 200px;
+    }
+
+    #certification-h1 {
+        font-size: 1.5em; /* Reduz o tamanho da fonte do título */
+        padding: 0.5em 0.5em; /* Reduz o padding do título */
+    }
+}
+
+@media (max-width: 320px) {
+    #certifications-scroll {
+        gap: 10px; /* Reduz o espaçamento entre os cards */
+        padding: 1em 0.5em; /* Reduz o padding */
+    }
+
+    .card {
+        width: 250px; /* Reduz o tamanho dos cards */
+        height: 170px;
+        margin: 0 0.5em; /* Reduz a margem */
     }
 
     .card.expanded {

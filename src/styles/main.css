@@ -62,8 +62,8 @@ main {
 }
 
 #certifications {
-    
     padding-top: 1.4em;
+    overflow: hidden;
 }
 
 #certifications-content {
@@ -73,24 +73,29 @@ main {
 }
 
 #certifications-scroll {
-    display: flex;
+    display: inline-block;
+    white-space: nowrap;
+    width: 100%;
     gap: 20px;
     overflow-x: auto; /* Habilita o scroll horizontal */
     padding: 1em 1em; /* Adiciona padding para espaçamento */
     scrollbar-width: thin; /* Estilo da barra de scroll (para navegadores modernos) */
     scrollbar-color: var(--footer-icons) var(--footer-color); /* Cor da barra de scroll */
+    scroll-behavior: smooth; /* Adiciona suavidade ao scroll */
+    border: 10px solid var(--footer-color);
+    border-radius: 16px;
 }
 
 .card {
-    width: 200px;
-    height: 120px;
+    width: 300px;
+    height: 180px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
 }
@@ -103,33 +108,10 @@ main {
 }
 
 .card.expanded {
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 350px;
 }
 
 .card.expanded img {
     transform: scale(1.1);
-}
-
-.scroll-button {
-    background-color: var(--footer-icons);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    font-size: 1.5em;
-    transition: background-color 0.3s;
-}
-
-.scroll-button:hover {
-    background-color: var(--footer-icons-hover);
-}
-
-.left {
-    margin-right: 10px;
-}
-
-.right {
-    margin-left: 10px;
 }
