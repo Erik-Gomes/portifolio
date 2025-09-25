@@ -41,12 +41,38 @@ function highlightNav() {
 window.addEventListener("scroll", highlightNav);
 
 function toggleExpand(card) {
+  // Close other expanded cards first
+  document.querySelectorAll('.card.expanded, .card.expanded_vertical').forEach(c => {
+    if (c !== card) {
+      c.classList.remove('expanded');
+      c.classList.remove('expanded_vertical');
+    }
+  });
+
   card.classList.toggle("expanded");
 }
 
 function toggleExpandVertical(card) {
+  // Close other expanded cards first
+  document.querySelectorAll('.card.expanded, .card.expanded_vertical').forEach(c => {
+    if (c !== card) {
+      c.classList.remove('expanded');
+      c.classList.remove('expanded_vertical');
+    }
+  });
+
   card.classList.toggle("expanded_vertical");
 }
+
+// Close expanded cards when pressing Escape
+window.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' || e.key === 'Esc') {
+    document.querySelectorAll('.card.expanded, .card.expanded_vertical').forEach(c => {
+      c.classList.remove('expanded');
+      c.classList.remove('expanded_vertical');
+    });
+  }
+});
 
 function scrollCards(direction) {
   const container = document.getElementById('certifications-scroll');

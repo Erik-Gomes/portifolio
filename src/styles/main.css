@@ -113,10 +113,33 @@ main {
 }
 
 .card.expanded_vertical {
-    width: 300px;
-    height: 500px;
+    /* For tall SENAI certificates: keep a fixed max height and allow width to grow
+       according to the image aspect ratio so the image is not cropped or stretched. */
+    width: auto;
+    height: 500px; /* visual height when expanded */
+    display: inline-block;
+    text-align: center;
 }
 
 .card.expanded img {
     transform: scale(1.1);
+}
+
+/* When a card is expanded vertically, let the image fill the card height
+   while preserving its aspect ratio (object-fit: contain). This avoids
+   cropping or distortion for certificates with tall proportions. */
+.card.expanded_vertical img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    margin: 0 auto;
+    transform: none; /* disable the zoom transform for vertical expands */
+}
+
+/* Optional helper class for SENAI cards (if you want to mark them in HTML).
+   If present, it ensures the image is treated as contained even before expanding. */
+.card.senai img {
+    object-fit: contain;
+    object-position: center;
 }
