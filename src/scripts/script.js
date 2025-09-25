@@ -44,6 +44,10 @@ function toggleExpand(card) {
   card.classList.toggle("expanded");
 }
 
+function toggleExpandVertical(card) {
+  card.classList.toggle("expanded_vertical");
+}
+
 function scrollCards(direction) {
   const container = document.getElementById('certifications-scroll');
   container.scrollBy({
